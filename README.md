@@ -2,19 +2,19 @@
 Need Web browser on the machine (Chrome, FireFox, Safari)
 Python library needed to run python code. (IDLE, Anaconda)
 Steps to install important packages-
-$ sudo apt-get update
-$ sudo apt-get -y upgrade
-$ sudo apt-get install -y python3-pip
-$ sudo easy_install sqlalchemy
+$ sudo apt-get update <br>
+$ sudo apt-get -y upgrade <br>
+$ sudo apt-get install -y python3-pip <br>
+$ sudo easy_install sqlalchemy<br>
 
 ## Technologies used :
-Python 3.5.2
-Flask 1.0.2
-SQLite 3.0 database
-Flask-Sqlalchemy 2.3.2
-JSON
-HTML
-CSS
+Python 3.5.2<br>
+Flask 1.0.2<br>
+SQLite 3.0 database<br>
+Flask-Sqlalchemy 2.3.2<br>
+JSON<br>
+HTML<br>
+CSS<br>
 
 ## Running the Meters Data App
 Now type **python database_setup.py** to initialize the database.
