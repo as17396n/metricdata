@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+
+body {
+    align-content: center;
+
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+
+</style>
+</head>
+<body>
+<div class="content">
+<h1 align="center">METERS<br>
+<button class="button button2"> <a href='{{url_for('viewAllMeters')}}'>All Meters JSON </a></button>
+</h1>
+
+
+
+
+{% for i in meterss %}
+
+<div>
+{% for meters in meterss %}
+
+<h2 ><a href='{{url_for('viewMeter', meters_id=meters.id )}}'>Meter {{i.label}}</a> </h2>
+<button class="button button2"> <a href='{{url_for('viewMeterJSON', meters_id=meters.id )}}'>MeterData entries for {{i.label}} in JSON </a></button>
+
+
+
+{% endfor %}
+
+<br>
+<br>
+
+
+
+</div>
+
+
+{% endfor %}
+</div>
+
+</body>
+
+</html>
