@@ -1,7 +1,7 @@
 ## Prerequisites:
 Need Web browser on the machine (Chrome, FireFox, Safari)
 Python library needed to run python code. (IDLE, Anaconda)
-Steps to install important packages-
+Steps to install important packages- <br>
 $ sudo apt-get update <br>
 $ sudo apt-get -y upgrade <br>
 $ sudo apt-get install -y python3-pip <br>
